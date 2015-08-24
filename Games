@@ -1,0 +1,3 @@
+https://wiki.archlinux.org/index.php/List_of_Games
+
+pacman -S alienarena caph freeciv openttd openttd-opengfx openttd-opensfx minetest assaultcube urbanterror simutrans xonotic 0ad
