@@ -1,0 +1,9 @@
+# Iceweasel from Parabola
+wget https://repo.parabola.nu/libre/os/x86_64/iceweasel-1:40.0.deb1-4-x86_64.pkg.tar.xz
+pacman -U iceweasel-1\:40.0.deb1-4-x86_64.pkg.tar.xz
+pacman -S gst-libav gst-plugins-good
+
+# Remember to make it display your system as Linux:
+
+general.oscpu.override Linux x86_64
+general.useragent.override Mozilla/5.0 (Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0
