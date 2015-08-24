@@ -62,3 +62,25 @@ EndSection
 -----------------------------------------
 
 # Now I install GRSec, Pax and such
+
+pacman -S linux-grsec paxd checksec pax-utils  paxtest
+
+# Make a backup of the following files:
+
+cp /etc/sysctl.d/05-grsecurity.conf /home/amarildo/05-grsecurity.conf
+cp /etc/paxd.conf /home/amarildo/paxd.conf
+
+# Make sure syslinux boots the right kernel
+
+nano /boot/syslinux/syslinux.cfg
+
+LABEL arch
+    MENU LABEL Arch Linux
+    LINUX ../vmlinuz-linux-grsec
+    APPEND root=/dev/mapper/system-root cryptdevice=/dev/sda2:root rw
+    INITRD ../initramfs-linux-grsec.img
+
+
+# Finally:
+
+mkinitcpio -p linux-grsec
