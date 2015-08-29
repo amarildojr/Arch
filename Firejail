@@ -1,0 +1,20 @@
+firejail --caps.drop=all --seccomp 
+
+firejail --caps.drop=all --private 
+
+--------------
+
+firejail --caps.drop=all --noroot --seccomp 
+
+firejail --caps.drop=all -overlay --seccomp 
+
+--------------
+
+firejail --caps.drop=all --noroot --seccomp --private 
+
+firejail --caps.drop=all -overlay --seccomp --private 
+
+--------------
+
+
+firejail --caps.drop=all --noroot --overlay --private --seccomp --trace 
