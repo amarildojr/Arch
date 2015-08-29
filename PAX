@@ -1,0 +1,3 @@
+setfattr -n user.pax.flags -v "PEmRS" /usr/bin/problematic_binary
+
+getfattr -n user.pax.flags /usr/bin/problematic_binary
