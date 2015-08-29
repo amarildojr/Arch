@@ -1,0 +1,3 @@
+If VLC can't open CD's, do:
+
+sudo pacman -S libcdio
