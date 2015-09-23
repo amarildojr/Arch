@@ -1,0 +1,65 @@
+caps.drop all
+seccomp
+noroot
+shell none
+
+############### disable-mgmt.inc########
+
+# system directories
+blacklist /sbin
+blacklist /usr/sbin
+
+# system management
+blacklist ${PATH}/umount
+blacklist ${PATH}/mount
+blacklist ${PATH}/fusermount
+blacklist ${PATH}/su
+blacklist ${PATH}/sudo
+blacklist ${PATH}/xinput
+blacklist ${PATH}/evtest
+blacklist ${PATH}/xev
+blacklist ${PATH}/strace
+
+# Prevent manipulation of firejail configuration
+blacklist /etc/firejail
+blacklist ${HOME}/.config/firejail
+
+############disable-secret.inc##############
+
+# HOME directory
+blacklist ${HOME}/.ssh
+tmpfs ${HOME}/.gnome2_private
+blacklist ${HOME}/.gnome2/keyrings
+blacklist ${HOME}/kde4/share/apps/kwallet
+blacklist ${HOME}/kde/share/apps/kwallet
+blacklist ${HOME}/.pki/nssdb
+blacklist ${HOME}/.gnupg
+blacklist ${HOME}/.local/share/recently-used.xbel
+
+################ disable-common.inc###############
+# HTTP / FTP / Mail
+blacklist ${HOME}/.adobe
+blacklist ${HOME}/.macromedia
+blacklist ${HOME}/.icedove
+blacklist ${HOME}/.thunderbird
+blacklist ${HOME}/.config/midori
+blacklist ${HOME}/.config/opera
+blacklist ${HOME}/.config/chromium
+blacklist ${HOME}/.config/google-chrome
+blacklist ${HOME}/.filezilla
+blacklist ${HOME}/.config/filezilla
+
+# Instant Messaging
+blacklist ${HOME}/.purple
+blacklist ${HOME}/.config/psi+
+
+# VNC
+blacklist ${HOME}/.remmina
+
+# Other
+blacklist ${HOME}/.tconn
+
+############## disable-history.inc #################
+# History files in $HOME
+blacklist ${HOME}/.history
+blacklist ${HOME}/.*_history
