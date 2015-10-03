@@ -1,0 +1,12 @@
+If pulseaudio erros occur:
+
+rm -r /usr/share/pulseaudio/alsa-mixer/paths/
+rm /etc/asound.conf
+pacman -Rdd pulseaudio pulseaudio-alsa alsa-utils lib32-libpulse pavucontrol paprefs
+
+rm /var/cache/pacman/pkg/pulseaudio-alsa-2-3-any.pkg.tar.xz
+rm /var/cache/pacman/pkg/pulseaudio-7.0-2-x86_64.pkg.tar.xz
+rm /var/cache/pacman/pkg/pulseaudio-gconf-7.0-2-x86_64.pkg.tar.xz
+rm /var/cache/pacman/pkg/libpulse-7.0-2-x86_64.pkg.tar.xz
+
+pacman -S pulseaudio pulseaudio-alsa alsa-utils lib32-libpulse pavucontrol paprefs
