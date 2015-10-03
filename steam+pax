@@ -1,0 +1,24 @@
+setfattr -n user.pax.flags -v "PemRS" /home/amarildo/.local/share/Steam/ubuntu12_32/steam
+
+find ~/.steam/root/ \( -name "libgcc_s.so*" -o -name "libstdc++.so*" -o -name "libxcb.so*" \) -print -delete
+
+Let it download it's thing
+It will close again
+
+find ~/.steam/root/ \( -name "libgcc_s.so*" -o -name "libstdc++.so*" -o -name "libxcb.so*" \) -print -delete
+
+setfattr -n user.pax.flags -v "PemRS" /home/amarildo/.local/share/Steam/ubuntu12_32/steam
+setfattr -n user.pax.flags -v "PemRS" /home/amarildo/.local/share/Steam/steam.sh
+setfattr -n user.pax.flags -v "PemRS" /home/amarildo/.steam/steam/ubuntu12_32/friendsui.so
+setfattr -n user.pax.flags -v "PemRS" /home/amarildo/.steam/steam/ubuntu12_32/gameoverlayrenderer.so
+setfattr -n user.pax.flags -v "PemRS" /home/amarildo/.steam/steam/ubuntu12_32/gameoverlayui
+setfattr -n user.pax.flags -v "PemRS" /home/amarildo/.steam/steam/ubuntu12_32/gameoverlayui.so
+setfattr -n user.pax.flags -v "PemRS" /home/amarildo/.steam/steam/ubuntu12_32/serverbrowser.so
+setfattr -n user.pax.flags -v "PemRS" /home/amarildo/.steam/steam/ubuntu12_32/snapshot_blob.bin
+setfattr -n user.pax.flags -v "PemRS" /home/amarildo/.steam/steam/ubuntu12_32/steam
+setfattr -n user.pax.flags -v "PemRS" /home/amarildo/.steam/steam/ubuntu12_32/steamclient.so
+setfattr -n user.pax.flags -v "PemRS" /home/amarildo/.steam/steam/ubuntu12_32/steamservice.so
+setfattr -n user.pax.flags -v "PemRS" /home/amarildo/.steam/steam/ubuntu12_32/steamui.so
+setfattr -n user.pax.flags -v "PemRS" /home/amarildo/.steam/steam/ubuntu12_32/steamwebhelper
+setfattr -n user.pax.flags -v "PemRS" /home/amarildo/.steam/steam/ubuntu12_32/streaming_client
+setfattr -n user.pax.flags -v "PemRS" /home/amarildo/.steam/steam/ubuntu12_32/vgui2_s.so
