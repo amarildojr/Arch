@@ -1,0 +1,3 @@
+If don't starve has no audio:
+
+pacman -S lib32-alsa-plugins
