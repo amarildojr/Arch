@@ -1,0 +1,90 @@
+If you dig into the GNU philosophy and you're an advanced Linux user than you might have heard of Parabola GNU Linux, a distro based off of Arch. In fact, if you ever used Arch Linux you'll notice that Parabola *is* Arch -with a few modifications such as de-blobbed Kernel and only Libre packages.
+
+
+Parabola ships a program called "your-freedom" that will conflict with all non-free packages you might want to install. This is a good thing if you're a GNU-Head like me. But if you're like me and can't use Parabola for one or two reasons, you might want to install your-freedom on Arch (like I did). But what if you need one pacakge on Arch repositories and this package conflicts with your-freedom?
+
+
+I faced this problem because in addition of using your-freedom I also use Steam so that I can have the latest Blender updates and also to have a little fun once in a while. The problem is, Steam is a non-free package and your-freedom will conflict with it, so I had to come up with a method of using both at the same time. As it turns out, it's pretty simple.
+
+
+If you look at your-freedom source files you'll noticed it pulls a file called "blacklist". This file contains a list of all non-free programs out there for Linux, and it will be used at compilation time in order to tell pacman (Arch and Parabola's package manager) that it conflicts with this or that package. We can change that.
+
+
+To begin with, let's first download the source files.
+
+[code]mkdir yourfreedom
+
+cd yourfreedom
+
+wget https://projects.parabola.nu/abslibre.git/plain/libre/your-freedom/PKGBUILD
+
+wget https://projects.parabola.nu/abslibre.git/tree/libre/your-freedom/post-receive-hook.sh
+
+wget https://projects.parabola.nu/abslibre.git/plain/libre/your-freedom/your-freedom.install[/code]
+
+
+You can see in the PKGBUILD that other necessary files will be downloaded. We could download one by one but this consumes time. Instead, we will simply build the original package, this will download everything for us.
+
+
+Before building the package, you need to satisfy a dependency for your-freedom compilation, so download it from Parabola's repo and install it too:
+
+[code]wget https://repo.parabola.nu/libre/os/x86_64/librelib-20150607-7-any.pkg.tar.xz
+
+sudo pacman -U librelib-20150607-7-any.pkg.tar.xz[/code]
+
+
+Now we can build your-freedom. It will ask you for your sudo password. Don't forget you need to be in the wheel group in order to use sudo. Read the wiki on how to do so.
+
+[code]makepkg -s[/code]
+
+
+
+Done! [Not really]. We just created the same your-freedom as the one in the repos. Now let's edit it :thumb:
+
+
+If you done everything correctly you'll have the following files/folders on the build directory: https://i.imgur.com/EEQ4CFn.png
+
+
+You can either edit them with your mouse or you can do it via Terminal. Since it's possible to edit them with the mouse I'll be guiding you this way.
+
+
+First, open the file "blacklist-bla-bla-bla.txt" and remove the following line:
+
+https://i.imgur.com/K31YYOx.png
+
+
+Next, open the file /yourfreedom/pkg/your-freedom/usr/share/doc/your-freedom/blacklist.txt and remove the Steam line from there too.
+
+
+We're almost done!
+
+
+If we try to compile the package now we will face an error, because the checksum of the file "blacklist-bla-bla" changed (because WE changed it) from what's in the PKGBUILD. So, we just need to replace the original "blacklist-bla-bla" checksum (in the PKGBUILD) with our modified "blacklist-bla-bla" checksum. To do so, first let's calculate the md5sum of our modified file:
+
+[code]md5sum blacklist-2974ab863a60e8ae0c7096403b0d67cd814e9376.txt[/code]
+
+My result:
+
+135ebe76d3ec3ea087a6b70796a0159e
+
+
+Now open the PKGBUILD and change the old checksum to our own:
+
+https://i.imgur.com/zaUXQdB.png
+
+
+Whooa! Now we can actually build and install our own modified package. But first, let's delete the original your-freedom:
+
+[code]rm your-freedom-20150928-1-any.pkg.tar.xz[/code]
+
+
+Now the build and install process:
+
+[code]makepkg -s
+
+sudo pacman -U your-freedom-20150928-1-any.pkg.tar.xz[/code]
+
+
+
+
+Happy gaming :)
