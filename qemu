@@ -1,0 +1,5 @@
+qemu-system-x86_64 -enable-kvm -m 2G image.iso
+
+/etc/modules-load.d/virtualbox.conf
+kvm_amd
+kvm
