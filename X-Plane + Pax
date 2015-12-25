@@ -1,0 +1,27 @@
+setfattr -n user.pax.flags -v "pemrs" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/Airfoil-Maker-i386 
+setfattr -n user.pax.flags -v "pemrs" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/Airfoil-Maker-x86_64 
+setfattr -n user.pax.flags -v "pemrs" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/Plane-Maker-i386 
+setfattr -n user.pax.flags -v "pemrs" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/Plane-Maker-x86_64 
+setfattr -n user.pax.flags -v "pemrs" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/X-Plane-i386 
+setfattr -n user.pax.flags -v "pemrs" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/X-Plane-x86_64 
+
+setfattr -n user.pax.flags -v "em" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/Airfoil-Maker-i386 
+setfattr -n user.pax.flags -v "em" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/Airfoil-Maker-x86_64 
+setfattr -n user.pax.flags -v "em" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/Plane-Maker-i386 
+setfattr -n user.pax.flags -v "em" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/Plane-Maker-x86_64 
+setfattr -n user.pax.flags -v "em" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/X-Plane-i386 
+setfattr -n user.pax.flags -v "em" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/X-Plane-x86_64 
+
+setfattr -n user.pax.flags -v "m" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/Airfoil-Maker-i386 
+setfattr -n user.pax.flags -v "m" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/Airfoil-Maker-x86_64 
+setfattr -n user.pax.flags -v "m" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/Plane-Maker-i386 
+setfattr -n user.pax.flags -v "m" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/Plane-Maker-x86_64 
+setfattr -n user.pax.flags -v "m" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/X-Plane-i386 
+setfattr -n user.pax.flags -v "m" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/X-Plane-x86_64 
+
+setfattr -n user.pax.flags -v "pemrs" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/Airfoil-Maker-i386 
+setfattr -n user.pax.flags -v "pemrs" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/Airfoil-Maker-x86_64 
+setfattr -n user.pax.flags -v "pemrs" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/Plane-Maker-i386 
+setfattr -n user.pax.flags -v "pemrs" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/Plane-Maker-x86_64 
+setfattr -n user.pax.flags -v "pemrs" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/X-Plane-i386 
+setfattr -n user.pax.flags -v "pemrs" /home/amarildo/.local/share/Steam/steamapps/common/X-Plane\ 10/X-Plane-x86_64 
