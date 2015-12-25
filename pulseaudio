@@ -1,5 +1,0 @@
-If pulseaudio doesn't work with Firejail:
-
-#Create a client.conf file in /home/amarildo/.config/pulse/ with content:
-
-enable-shm = no
