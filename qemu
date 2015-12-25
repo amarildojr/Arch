@@ -1,4 +1,4 @@
-qemu-system-x86_64 -enable-kvm -m 2G accel=kvm -soundhw all image.iso
+qemu-system-x86_64 -enable-kvm -m 2G -vga std  /home/amarildo/Downloads/image.iso
 
 /etc/modules-load.d/virtualbox.conf
 kvm_amd
