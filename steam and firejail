@@ -1,0 +1,1 @@
+env STEAM_FRAME_FORCE_CLOSE=1 firejail steam
