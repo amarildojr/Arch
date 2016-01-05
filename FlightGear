@@ -1,0 +1,12 @@
+http://wiki.flightgear.org/Scripted_Compilation_on_Linux_Debian/Ubuntu
+
+./download_and_compile.sh -s ALL
+./download_and_compile.sh -s FGRUN
+svn checkout svn://svn.code.sf.net/p/flightgear/fgaddon/trunk /home/amarildo/flightgear-dev/fgaddon-ng
+
+
+OSGEARTH
+
+http://wiki.flightgear.org/Building_FlightGear_with_osgEarth_Integration
+
+http://forum.flightgear.org/viewtopic.php?f=81&t=23257#p218345
