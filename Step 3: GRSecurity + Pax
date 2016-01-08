@@ -16,8 +16,3 @@ LABEL arch
     LINUX ../vmlinuz-linux-grsec
     APPEND root=/dev/mapper/system-root cryptdevice=/dev/sda2:root rw
     INITRD ../initramfs-linux-grsec.img
-
-
-# Finally:
-
-mkinitcpio -p linux-grsec
