@@ -10,3 +10,11 @@ OSGEARTH
 http://wiki.flightgear.org/Building_FlightGear_with_osgEarth_Integration
 
 http://forum.flightgear.org/viewtopic.php?f=81&t=23257#p218345
+
+
+export OSG_DIR=/home/amarildo/Documents/Jogos/FlightGear/Sim/install/openscenegraph/
+
+export LD_LIBRARY_PATH=/home/amarildo/Documents/Jogos/FlightGear/Sim/install/openscenegraph/lib64/:$LD_LIBRARY_PATH
+
+
+export LD_LIBRARY_PATH=/home/amarildo/Documents/Jogos/FlightGear/Sim/install/openscenegraph/lib/:$LD_LIBRARY_PATH
