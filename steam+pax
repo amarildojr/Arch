@@ -7,6 +7,8 @@ It will close again
 
 find ~/.steam/root/ \( -name "libgcc_s.so*" -o -name "libstdc++.so*" -o -name "libxcb.so*" \) -print -delete
 
+find ~/.steam/root/ -name "libgpg-error.so*" -print -delete
+
 setfattr -n user.pax.flags -v "m" /home/amarildo/.local/share/Steam/ubuntu12_32/steam
 setfattr -n user.pax.flags -v "m" /home/amarildo/.local/share/Steam/steam.sh
 setfattr -n user.pax.flags -v "m" /home/amarildo/.steam/steam/ubuntu12_32/friendsui.so
