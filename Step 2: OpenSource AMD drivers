@@ -44,3 +44,7 @@ Section "Screen"
 EndSection
 
 # REBOOT
+
+
+
+sudo sed -i s/hl2/hl3/ /etc/ati/atiapfxx.log
