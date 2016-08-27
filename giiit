@@ -9,4 +9,11 @@ Server = http://repos.uni-plovdiv.net/archlinux/$repo/$arch
 
 // Mesa-git
 
+[mesa-git]
+Server = http://pkgbuild.com/~lcarlier/$repo/$arch
+SigLevel = Never
+
+// pacman-key --keyserver pgp.mit.edu --recv-keys  0xD1CEDDAC
+// pacman-key --lsign-key 0xD1CEDDAC
+
 pacman -S lib32-mesa-git mesa-git opencl-mesa-git
