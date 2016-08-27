@@ -17,4 +17,4 @@ SigLevel = Never
 // pacman-key --keyserver pgp.mit.edu --recv-keys  0xD1CEDDAC
 // pacman-key --lsign-key 0xD1CEDDAC
 
-pacman -S lib32-mesa-git mesa-git opencl-mesa-git
+pacman -S lib32-mesa-git mesa-git opencl-mesa-git lib32-mesa-libgl-git
