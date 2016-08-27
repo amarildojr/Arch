@@ -1,3 +1,7 @@
-If don't starve has no audio:
+// If don't starve has no audio:
 
 pacman -S lib32-alsa-plugins
+
+// If screen is black
+
+sudo pacman -S lib32-libtxc_dxtn
