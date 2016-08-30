@@ -1,1 +1,5 @@
 pacman -U $(ls | grep .pkg.tar.xz)
+
+
+// shorter version
+sudo pacman -U $(ls *.pkg.tar.xz)
