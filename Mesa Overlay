@@ -1,0 +1,1 @@
+GALLIUM_HUD=".dfps,cpu+GPU-load,.drequested-VRAM+.dVRAM-usage,.drequested-GTT+.dGTT-usage,.dnum-evictions,.dnum-bytes-moved,.dbuffer-wait-time;.dnum-compilations,.dnum-shaders-created,.ddraw-calls,.dcompute-calls+.dspill-draw-calls+.dspill-compute-calls+.ddma-calls,.dnum-cs-flushes,cpu0+cpu1+cpu2+cpu3+cpu4+cpu5"
