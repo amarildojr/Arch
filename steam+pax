@@ -1,13 +1,13 @@
+(ONLY DO THIS AT INITIAL STEAM SETUP, OTHERWISE IT WILL DELETE A FEW LIBRARIES INSIDE L4D2's and PORTAL2's FOLDER)
+
 setfattr -n user.pax.flags -v "m" /home/amarildo/.local/share/Steam/ubuntu12_32/steam
 
-find ~/.steam/root/ \( -name "libgcc_s.so*" -o -name "libstdc++.so*" -o -name "libxcb.so*" \) -print -delete
+find ~/.steam/root/ \( -name "libgcc_s.so*" -o -name "libstdc++.so*" -o -name "libxcb.so*" -o -name "libgpg-error.so*" \) -print -delete
 
 Let it download it's thing
 It will close again
 
-find ~/.steam/root/ \( -name "libgcc_s.so*" -o -name "libstdc++.so*" -o -name "libxcb.so*" \) -print -delete
-
-find ~/.steam/root/ -name "libgpg-error.so*" -print -delete
+find ~/.steam/root/ \( -name "libgcc_s.so*" -o -name "libstdc++.so*" -o -name "libxcb.so*" -o -name "libgpg-error.so*" \) -print -delete
 
 setfattr -n user.pax.flags -v "m" /home/amarildo/.local/share/Steam/ubuntu12_32/steam
 setfattr -n user.pax.flags -v "m" /home/amarildo/.local/share/Steam/steam.sh
