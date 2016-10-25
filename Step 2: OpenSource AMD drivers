@@ -1,13 +1,13 @@
 # Open Source AMD Drivers (they're pretty good!)
-pacman -S xf86-video-ati mesa-libgl lib32-mesa-libgl mesa-vdpau lib32-mesa-vdpau
+pacman -S xf86-video-amdgpu mesa-libgl lib32-mesa-libgl mesa-vdpau lib32-mesa-vdpau
 
 # Radeon Configuration
 
-nano /etc/X11/xorg.conf.d/20-radeon.conf
+nano /etc/X11/xorg.conf.d/20-amdgpu.conf
 
 Section "Device"
     Identifier "Radeon R9 270X"
-    Driver "radeon"
+    Driver "amdgpu"
     Option "DRI" "3"
 EndSection
 
@@ -15,7 +15,7 @@ EndSection
 
 nano /etc/mkinitcpio.conf
 
-MODULES="radeon"
+MODULES="amdgpu"
 
 mkinitcpio -p linux
 
@@ -28,7 +28,7 @@ EndSection
 
 Section "Device"
     Identifier             "Radeon R9 270X"
-    Driver                 "radeon"
+    Driver                 "amdgpu"
     Option "DRI" "3"
 EndSection
 
@@ -45,6 +45,5 @@ EndSection
 
 # REBOOT
 
-
-
-sudo sed -i s/hl2/hl3/ /etc/ati/atiapfxx.log
+nano /etc/modprobe.d/radeon.conf
+blacklist radeon
