@@ -2,3 +2,5 @@ env STEAM_FRAME_FORCE_CLOSE=1 firejail steam
 
 
 env MESA_GLSL_VERSION_OVERRIDE=450 env STEAM_FRAME_FORCE_CLOSE=1 env MESA_GL_VERSION_OVERRIDE=4.5COMPAT firejail /usr/bin/steam %U
+
+env STEAM_FRAME_FORCE_CLOSE=1 MESA_EXTENSION_OVERRIDE='-GL_AMD_pinned_memory' firejail /usr/bin/steam %U
