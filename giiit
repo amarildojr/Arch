@@ -18,3 +18,5 @@ SigLevel = Never
 // pacman-key --lsign-key 0xD1CEDDAC
 
 pacman -S lib32-mesa-git mesa-git opencl-mesa-git lib32-mesa-libgl-git
+
+clang-svn clang-tools-extra-svn lib32-libdrm-git lib32-llvm-svn lib32-vulkan-radeon-git libclc-git libdrm-git llvm-svn opencl-mesa-git vulkan-radeon-git xf86-video-amdgpu-git xf86-video-ati-git
